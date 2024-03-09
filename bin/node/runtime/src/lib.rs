@@ -470,6 +470,7 @@ impl pallet_timestamp::Config for Runtime {
 	type OnTimestampSet = Babe;
 	type MinimumPeriod = MinimumPeriod;
 	type WeightInfo = pallet_timestamp::weights::SubstrateWeight<Runtime>;
+	type SkipTimestampCheck = ConstBool<true>;
 }
 
 parameter_types! {
